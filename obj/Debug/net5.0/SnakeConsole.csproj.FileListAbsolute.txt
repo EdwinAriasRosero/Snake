@@ -1,0 +1,16 @@
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.csproj.AssemblyReference.cache
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.GeneratedMSBuildEditorConfig.editorconfig
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.AssemblyInfoInputs.cache
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.AssemblyInfo.cs
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.csproj.CoreCompileInputs.cache
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.exe
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.deps.json
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.runtimeconfig.json
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.runtimeconfig.dev.json
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.dll
+E:\DV\Snake\bin\Debug\net5.0\ref\SnakeConsole.dll
+E:\DV\Snake\bin\Debug\net5.0\SnakeConsole.pdb
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.dll
+E:\DV\Snake\obj\Debug\net5.0\ref\SnakeConsole.dll
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.pdb
+E:\DV\Snake\obj\Debug\net5.0\SnakeConsole.genruntimeconfig.cache
