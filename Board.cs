@@ -1,20 +1,16 @@
-using System;
 using System.Collections.Generic;
 
 namespace SnakeConsole
 {
-    public class Board : IDrawer
+
+    public class Board : DrawObject
     {
         private List<IDrawer> _items;
-        private readonly int _width;
-        private readonly int _height;
-
-        public Queue<Position> Position { get; set; }
 
         public Board(int width, int height)
         {
-            _width = width;
-            _height = height;
+            LocationList = new Queue<Location>();
+            LocationList.Enqueue(new Location(1, 1, width, height));
             _items = new List<IDrawer>();
 
             DrawBoard();
@@ -25,38 +21,34 @@ namespace SnakeConsole
             _items.Add(item);
         }
 
-
         private void DrawBoard()
         {
-            for (int i = 0; i <= _width; i++)
+            for (int i = 0; i <= Location.Width; i++)
             {
-                Console.SetCursorPosition(i, 0);
-                Console.Write("▀");
+                Drawing.Draw(Parent, i, 0, '▀');
             }
 
-            for (int i = 0; i <= _width; i++)
+            for (int i = 0; i <= Location.Width; i++)
             {
-                Console.SetCursorPosition(i, _height);
-                Console.Write("▄");
+                Drawing.Draw(Parent, i, Location.Height, '▄');
             }
 
-            for (int i = 0; i <= _height; i++)
+            for (int i = 0; i <= Location.Height; i++)
             {
-                Console.SetCursorPosition(0, i);
-                Console.Write("█");
+                Drawing.Draw(Parent, 0, i, '█');
             }
 
-            for (int i = 0; i <= _height; i++)
+            for (int i = 0; i <= Location.Height; i++)
             {
-                Console.SetCursorPosition(_width, i);
-                Console.Write("█");
+                Drawing.Draw(Parent, Location.Width, i, '█');
             }
         }
 
-        public void Draw()
+        public override void Draw()
         {
-            foreach (IDrawer drawer in _items)
+            foreach (DrawObject drawer in _items)
             {
+                drawer.Parent = this;
                 drawer.Draw();
             }
         }

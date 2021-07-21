@@ -7,15 +7,12 @@ namespace SnakeConsole
     {
         static void Main(string[] args)
         {
-            IDrawing drawing = new Drawing();
             Board board = new Board(30, 30);
-            Snake snake = new Snake(drawing);
-            Fruit fruit = new Fruit(drawing, 10, 10);
+            Snake snake = new Snake(1, 1);
+            Fruit fruit = new Fruit(10, 10);
 
             board.AddItem(snake);
             board.AddItem(fruit);
-
-            board.Draw();
 
             CommandInvoker commandInvoker = new CommandInvoker();
             ICommand command = new RightCommand(board, snake);

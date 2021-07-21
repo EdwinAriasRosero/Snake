@@ -2,6 +2,6 @@ namespace SnakeConsole
 {
     public interface IDrawing
     {
-        void Draw(int left, int top, char letter);
+        void Draw(DrawObject parent, int left, int top, char letter);
     }
 }

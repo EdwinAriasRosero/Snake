@@ -4,6 +4,6 @@ namespace SnakeConsole
 {
     public interface IObject
     {
-        Queue<Position> Position { get; set; }
+        Queue<Location> LocationList { get; set; }
     }
 }
