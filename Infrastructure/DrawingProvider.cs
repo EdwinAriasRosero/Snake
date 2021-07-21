@@ -2,9 +2,9 @@ using System;
 
 namespace SnakeConsole
 {
-    public class Drawing : IDrawing
+    public class DrawingProvider : IDrawingProvider
     {
-        public void Draw(DrawObject parent, int left, int top, char letter)
+        public void Draw(DrawingObject parent, int left, int top, char letter)
         {
             if (parent != null)
             {

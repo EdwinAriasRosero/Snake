@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace SnakeConsole
 {
@@ -11,11 +10,11 @@ namespace SnakeConsole
             Snake snake = new Snake(1, 1);
             Fruit fruit = new Fruit(10, 10);
 
-            board.AddItem(snake);
-            board.AddItem(fruit);
+            board.AddChild(snake);
+            board.AddChild(fruit);
 
             CommandInvoker commandInvoker = new CommandInvoker();
-            ICommand command = new RightCommand(board, snake);
+            ICommand command = new RightCommand(snake);
 
             while (true)
             {
@@ -26,16 +25,16 @@ namespace SnakeConsole
                     switch (key.KeyChar)
                     {
                         case 'a':
-                            command = new LeftCommand(board, snake);
+                            command = new LeftCommand(snake);
                             break;
                         case 's':
-                            command = new BottomCommand(board, snake);
+                            command = new BottomCommand(snake);
                             break;
                         case 'w':
-                            command = new TopCommand(board, snake);
+                            command = new TopCommand(snake);
                             break;
                         case 'd':
-                            command = new RightCommand(board, snake);
+                            command = new RightCommand(snake);
                             break;
                     }
                 }
