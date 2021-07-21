@@ -7,7 +7,7 @@ namespace SnakeConsole
     {
         public LinkedList<Location> LocationList { get; set; }
 
-        public Location Location => LocationList.ElementAt(0);
+        public Location Location => LocationList.First();
 
         protected readonly IDrawingProvider _drawing;
 

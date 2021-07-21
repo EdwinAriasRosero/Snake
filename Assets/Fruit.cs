@@ -12,7 +12,7 @@ namespace SnakeConsole
         {
             if (!_isDrawed)
             {
-                Paint(Location.X, Location.Y, "█");
+                Paint(Location.X, Location.Y, "▒");
                 _isDrawed = true;
             }
         }

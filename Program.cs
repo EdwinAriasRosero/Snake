@@ -16,7 +16,8 @@ namespace SnakeConsole
             board.Add(fruit);
 
             CommandInvoker commandInvoker = new CommandInvoker();
-            ICommand command = new RightCommand(snake);
+            SnakeCommandFactory snakeCommandFactory = new SnakeCommandFactory(snake);
+            ICommand command = snakeCommandFactory.Create('d');
 
             try
             {
@@ -24,23 +25,7 @@ namespace SnakeConsole
                 {
                     if (Console.KeyAvailable)
                     {
-                        ConsoleKeyInfo key = Console.ReadKey(true);
-
-                        switch (key.KeyChar)
-                        {
-                            case 'a':
-                                command = new LeftCommand(snake);
-                                break;
-                            case 's':
-                                command = new BottomCommand(snake);
-                                break;
-                            case 'w':
-                                command = new TopCommand(snake);
-                                break;
-                            case 'd':
-                                command = new RightCommand(snake);
-                                break;
-                        }
+                        command = snakeCommandFactory.Create(Console.ReadKey(true).KeyChar);
                     }
 
                     commandInvoker.Invoke(command);
@@ -52,11 +37,8 @@ namespace SnakeConsole
             {
                 IDrawingProvider drawingProvider = new DrawingProvider();
                 drawingProvider.SetText(1, board.Location.Height + 1, $"GAME OVER............... (Collision {ex.Message})");
-
                 Console.ReadKey();
             }
-
-
         }
     }
 }

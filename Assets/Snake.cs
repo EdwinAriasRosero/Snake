@@ -19,7 +19,7 @@ namespace SnakeConsole
                 .ForEach(x => x.HandleCollision(x, snakeHead));
 
             Location headLocation = LocationList.First();
-            Paint(headLocation.X, headLocation.Y, "▒");
+            Paint(headLocation.X, headLocation.Y, "█");
 
             if (_previousPosition != null)
             {
