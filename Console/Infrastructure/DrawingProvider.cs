@@ -28,9 +28,9 @@ namespace SnakeConsole
             {
                 for (int j = 0; j < height; j++)
                 {
-                    System.Console.SetCursorPosition(i, j);
-                    System.Console.BackgroundColor = System.ConsoleColor.Yellow;
-                    System.Console.Write("\0");
+                    Console.SetCursorPosition(i, j);
+                    Console.BackgroundColor = System.ConsoleColor.Yellow;
+                    Console.Write("\0");
 
                 }
             }

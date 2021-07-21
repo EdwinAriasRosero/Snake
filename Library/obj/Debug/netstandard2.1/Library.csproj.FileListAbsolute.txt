@@ -1,0 +1,8 @@
+E:\DV\Snake\Library\bin\Debug\netstandard2.1\Library.deps.json
+E:\DV\Snake\Library\bin\Debug\netstandard2.1\Library.dll
+E:\DV\Snake\Library\bin\Debug\netstandard2.1\Library.pdb
+E:\DV\Snake\Library\obj\Debug\netstandard2.1\Library.AssemblyInfoInputs.cache
+E:\DV\Snake\Library\obj\Debug\netstandard2.1\Library.AssemblyInfo.cs
+E:\DV\Snake\Library\obj\Debug\netstandard2.1\Library.csproj.CoreCompileInputs.cache
+E:\DV\Snake\Library\obj\Debug\netstandard2.1\Library.dll
+E:\DV\Snake\Library\obj\Debug\netstandard2.1\Library.pdb

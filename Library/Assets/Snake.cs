@@ -25,6 +25,8 @@ namespace SnakeConsole
             {
                 Paint(_previousPosition.X, _previousPosition.Y, "\0");
             }
+
+            System.Threading.Thread.Sleep(LocationList.Count < 5 ? 100 : 50);
         }
 
         public void Move(Location location)

@@ -9,8 +9,8 @@ namespace SnakeConsole
         {
             IDrawingProvider drawingProvider1 = new DrawingProvider();
 
-            Board board = new Board(drawingProvider1, 50, 50);
-            Snake snake = new Snake(drawingProvider1, 20, 20);
+            Board board = new Board(drawingProvider1, 15, 15);
+            Snake snake = new Snake(drawingProvider1, 2, 2);
             FruitFactory fruitFactory = new FruitFactory(drawingProvider1, board, snake);
             Fruit fruit = fruitFactory.Create(10, 10);
 
@@ -32,7 +32,7 @@ namespace SnakeConsole
 
                     commandInvoker.Invoke(command);
                     board.Draw();
-                    System.Threading.Thread.Sleep(50);
+                    System.Threading.Thread.Sleep(100);
                 }
             }
             catch (CollistionException ex)

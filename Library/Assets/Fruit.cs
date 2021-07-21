@@ -10,11 +10,11 @@ namespace SnakeConsole
 
         public override void Paint()
         {
-            if (!_isDrawed)
-            {
+            //if (!_isDrawed)
+            //{
                 Paint(Location.X, Location.Y, "▒");
                 _isDrawed = true;
-            }
+            //}
         }
 
         public override void HandleCollision(DrawingObject obj, Location location)
