@@ -17,7 +17,7 @@ namespace SnakeConsole
                 Drawing.Draw(Parent, lastPosition.X, lastPosition.Y, '\0');
             }
 
-            Drawing.Draw(Parent, LocationList.ElementAt(0).X, LocationList.ElementAt(0).Y, '▒');
+            Drawing.Draw(Parent, Location.X, Location.Y, '▒');
         }
     }
 }

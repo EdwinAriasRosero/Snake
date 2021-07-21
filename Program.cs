@@ -42,7 +42,7 @@ namespace SnakeConsole
 
                 commandInvoker.Invoke(command);
                 board.Draw();
-                System.Threading.Thread.Sleep(200);
+                System.Threading.Thread.Sleep(50);
             }
 
         }

@@ -8,7 +8,7 @@ namespace SnakeConsole
         {
             if (parent != null)
             {
-                if (left >= parent.Location.Width - 1 || top >= parent.Location.Height - 1)
+                if (left >= parent.Location.Width - 1 || top >= parent.Location.Height - 1 || left < 1 || top < 1)
                 {
                     throw new Exception("Game over");
                 }

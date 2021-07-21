@@ -15,10 +15,7 @@ namespace SnakeConsole
 
         public void Handle()
         {
-            if (_snake.LocationList.ElementAt(0).X > 1)
-            {
-                _snake.LocationList.Enqueue(new Location(_snake.LocationList.ElementAt(0).X - 1, _snake.LocationList.ElementAt(0).Y));
-            }
+            _snake.LocationList.Enqueue(new Location(_snake.LocationList.ElementAt(0).X - 1, _snake.LocationList.ElementAt(0).Y));
         }
     }
 }
