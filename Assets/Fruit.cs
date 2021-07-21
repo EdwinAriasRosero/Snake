@@ -10,17 +10,17 @@ namespace SnakeConsole
 
         public override void Paint()
         {
-            Paint(Location.X, Location.Y, '₧');
-        }
-
-        public override void HandleCollision(DrawingObject obj)
-        {
             if (!_isDrawed)
             {
-                RootObject.RemoveChild(this);
+                Paint(Location.X, Location.Y, "█");
                 _isDrawed = true;
             }
         }
-    }
 
+        public override void HandleCollision(DrawingObject obj, Location location)
+        {
+            RootObject.Remove(this);
+            this.Notify(this);
+        }
+    }
 }

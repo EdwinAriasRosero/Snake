@@ -5,11 +5,11 @@ namespace SnakeConsole
 {
     public abstract class DrawingObject : CompositeObject, ICollisionable
     {
-        public Queue<Location> LocationList { get; set; }
+        public LinkedList<Location> LocationList { get; set; }
 
         public Location Location => LocationList.ElementAt(0);
 
-        private readonly IDrawingProvider _drawing;
+        protected readonly IDrawingProvider _drawing;
 
         public DrawingObject RootObject
         {
@@ -28,8 +28,8 @@ namespace SnakeConsole
 
         public DrawingObject(Location location)
         {
-            LocationList = new Queue<Location>();
-            LocationList.Enqueue(location);
+            LocationList = new LinkedList<Location>();
+            LocationList.AddFirst(location);
 
             _drawing = new DrawingProvider();
         }
@@ -48,9 +48,9 @@ namespace SnakeConsole
             return foundObjects;
         }
 
-        public void Paint(int left, int top, char letter)
+        public void Paint(int left, int top, string symbol)
         {
-            _drawing.Draw(Parent, left, top, letter);
+            _drawing.Draw(Parent, left, top, symbol);
         }
 
         public void Draw()
@@ -71,7 +71,7 @@ namespace SnakeConsole
 
         public virtual void Paint() { }
 
-        public virtual void HandleCollision(DrawingObject obj) { }
+        public virtual void HandleCollision(DrawingObject obj, Location location) { }
     }
 
 }

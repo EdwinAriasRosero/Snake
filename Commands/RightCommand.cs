@@ -11,7 +11,7 @@ namespace SnakeConsole
 
         public void Handle()
         {
-            _snake.LocationList.Enqueue(new Location(_snake.Location.X + 1, _snake.Location.Y));
+            _snake.Move(new Location(_snake.Location.X + 1, _snake.Location.Y));
         }
     }
 }

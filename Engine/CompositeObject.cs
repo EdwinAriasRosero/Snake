@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace SnakeConsole
 {
-    public abstract class CompositeObject
+    public abstract class CompositeObject : CollisionableObserver
     {
         public DrawingObject Parent { get; set; }
 
@@ -13,18 +13,18 @@ namespace SnakeConsole
             Children = new List<DrawingObject>();
         }
 
-        public void AddChild(DrawingObject asset)
+        public void Add(DrawingObject asset)
         {
             Children.Add(asset);
         }
 
-        public void RemoveChild(DrawingObject asset)
+        public void Remove(DrawingObject asset)
         {
             if (!Children.Remove(asset))
             {
                 foreach (DrawingObject child in Children)
                 {
-                    child.RemoveChild(asset);
+                    child.Remove(asset);
                 }
 
             }

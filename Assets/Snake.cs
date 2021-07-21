@@ -1,28 +1,53 @@
+using System.Collections.Generic;
+using System.Linq;
+
 namespace SnakeConsole
 {
     public class Snake : DrawingObject
     {
+        private Location _previousPosition;
+
         public Snake(int x, int y) : base(new Location(x, y))
         {
         }
 
         public override void Paint()
         {
-            if (LocationList.Count > 1)
+            var snakeHead = LocationList.First();
+            RootObject
+                .Find(snakeHead.X, snakeHead.Y)
+                .ForEach(x => x.HandleCollision(x, snakeHead));
+
+            Location headLocation = LocationList.First();
+            Paint(headLocation.X, headLocation.Y, "▒");
+
+            if (_previousPosition != null)
             {
-                Location lastPosition = LocationList.Dequeue();
-                Paint(lastPosition.X, lastPosition.Y, '\0');
+                Paint(_previousPosition.X, _previousPosition.Y, "\0");
             }
+        }
 
-            foreach (Location location in LocationList)
+        public void Move(Location location)
+        {
+            LocationList.AddFirst(location);
+            _previousPosition = LocationList.Last();
+            LocationList.RemoveLast();
+        }
+
+        public void Grow()
+        {
+            LocationList.AddLast(_previousPosition);
+            _previousPosition = null;
+        }
+
+        public override void HandleCollision(DrawingObject obj, Location location)
+        {
+            List<Location> bodyPositions = LocationList.Skip(1).ToList();
+
+            if (bodyPositions.Any(body => body.X == location.X && body.Y == location.Y))
             {
-                RootObject
-                    .Find(location.X, location.Y)
-                    .ForEach(x => x.HandleCollision(x));
-
-                Paint(location.X, location.Y, '▒');
+                throw new CollistionException("Snake");
             }
-
         }
     }
 }
