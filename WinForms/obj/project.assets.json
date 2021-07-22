@@ -2,28 +2,46 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "Library/1.0.0": {
+      "Engine/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETStandard,Version=v2.1",
         "compile": {
-          "bin/placeholder/Library.dll": {}
+          "bin/placeholder/Engine.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Library.dll": {}
+          "bin/placeholder/Engine.dll": {}
+        }
+      },
+      "Snake/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Engine": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Snake.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Snake.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Library/1.0.0": {
+    "Engine/1.0.0": {
       "type": "project",
-      "path": "../Library/Library.csproj",
-      "msbuildProject": "../Library/Library.csproj"
+      "path": "../Engine/Engine.csproj",
+      "msbuildProject": "../Engine/Engine.csproj"
+    },
+    "Snake/1.0.0": {
+      "type": "project",
+      "path": "../Snake/Snake.csproj",
+      "msbuildProject": "../Snake/Snake.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Library >= 1.0.0"
+      "Snake >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -48,7 +66,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net5.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -61,8 +79,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "E:\\DV\\Snake\\Library\\Library.csproj": {
-              "projectPath": "E:\\DV\\Snake\\Library\\Library.csproj"
+            "E:\\DV\\Snake\\Snake\\Snake.csproj": {
+              "projectPath": "E:\\DV\\Snake\\Snake\\Snake.csproj"
             }
           }
         }

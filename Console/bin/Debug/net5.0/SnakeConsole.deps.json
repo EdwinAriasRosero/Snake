@@ -8,15 +8,23 @@
     ".NETCoreApp,Version=v5.0": {
       "SnakeConsole/1.0.0": {
         "dependencies": {
-          "Library": "1.0.0"
+          "Snake": "1.0.0"
         },
         "runtime": {
           "SnakeConsole.dll": {}
         }
       },
-      "Library/1.0.0": {
+      "Engine/1.0.0": {
         "runtime": {
-          "Library.dll": {}
+          "Engine.dll": {}
+        }
+      },
+      "Snake/1.0.0": {
+        "dependencies": {
+          "Engine": "1.0.0"
+        },
+        "runtime": {
+          "Snake.dll": {}
         }
       }
     }
@@ -27,7 +35,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Library/1.0.0": {
+    "Engine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Snake/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

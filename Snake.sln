@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{793AC67F-0AC0-45BB-A272-0C3680F6D64E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Snake\Snake.csproj", "{793AC67F-0AC0-45BB-A272-0C3680F6D64E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeConsole", "Console\SnakeConsole.csproj", "{1EB8474E-CBB9-408E-9D83-B9410ACC5C3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms", "WinForms\WinForms.csproj", "{410DA192-888B-4366-81C4-7EA4557816BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{C449B410-82BA-4E1A-A7E3-812A4481C1F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,18 @@ Global
 		{410DA192-888B-4366-81C4-7EA4557816BE}.Release|x64.Build.0 = Release|Any CPU
 		{410DA192-888B-4366-81C4-7EA4557816BE}.Release|x86.ActiveCfg = Release|Any CPU
 		{410DA192-888B-4366-81C4-7EA4557816BE}.Release|x86.Build.0 = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|x64.Build.0 = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Debug|x86.Build.0 = Debug|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|x64.ActiveCfg = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|x64.Build.0 = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|x86.ActiveCfg = Release|Any CPU
+		{C449B410-82BA-4E1A-A7E3-812A4481C1F6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

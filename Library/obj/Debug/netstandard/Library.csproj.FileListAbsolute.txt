@@ -1,3 +1,0 @@
-E:\DV\Snake\Library\obj\Debug\netstandard\Library.AssemblyInfoInputs.cache
-E:\DV\Snake\Library\obj\Debug\netstandard\Library.AssemblyInfo.cs
-E:\DV\Snake\Library\obj\Debug\netstandard\Library.csproj.CoreCompileInputs.cache

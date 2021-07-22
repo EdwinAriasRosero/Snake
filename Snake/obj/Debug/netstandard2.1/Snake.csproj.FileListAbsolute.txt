@@ -1,0 +1,12 @@
+E:\DV\Snake\Snake\bin\Debug\netstandard2.1\Snake.deps.json
+E:\DV\Snake\Snake\bin\Debug\netstandard2.1\Snake.dll
+E:\DV\Snake\Snake\bin\Debug\netstandard2.1\Snake.pdb
+E:\DV\Snake\Snake\bin\Debug\netstandard2.1\Engine.dll
+E:\DV\Snake\Snake\bin\Debug\netstandard2.1\Engine.pdb
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.csproj.AssemblyReference.cache
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.AssemblyInfoInputs.cache
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.AssemblyInfo.cs
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.csproj.CoreCompileInputs.cache
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.csproj.CopyComplete
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.dll
+E:\DV\Snake\Snake\obj\Debug\netstandard2.1\Snake.pdb

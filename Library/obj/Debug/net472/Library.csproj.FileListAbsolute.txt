@@ -1,8 +1,0 @@
-E:\DV\Snake\Library\bin\Debug\net472\Library.dll
-E:\DV\Snake\Library\bin\Debug\net472\Library.pdb
-E:\DV\Snake\Library\obj\Debug\net472\Library.AssemblyInfoInputs.cache
-E:\DV\Snake\Library\obj\Debug\net472\Library.AssemblyInfo.cs
-E:\DV\Snake\Library\obj\Debug\net472\Library.csproj.CoreCompileInputs.cache
-E:\DV\Snake\Library\obj\Debug\net472\Library.dll
-E:\DV\Snake\Library\obj\Debug\net472\Library.pdb
-E:\DV\Snake\Library\obj\Debug\net472\Library.csproj.AssemblyReference.cache

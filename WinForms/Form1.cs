@@ -23,11 +23,11 @@ namespace WinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IDrawingProvider drawingProvider = new DrawingProvider(this);
+            IDrawer drawer = new Drawer(this);
 
-            Board board = new Board(drawingProvider, 50, 50);
-            Snake snake = new Snake(drawingProvider, 20, 20);
-            FruitFactory fruitFactory = new FruitFactory(drawingProvider, board, snake);
+            Board board = new Board(drawer, 50, 50);
+            Snake snake = new Snake(drawer, 20, 20);
+            FruitFactory fruitFactory = new FruitFactory(drawer, board, snake);
             Fruit fruit = fruitFactory.Create(10, 10);
 
             board.Add(snake);
@@ -49,9 +49,9 @@ namespace WinForms
                         System.Threading.Thread.Sleep(1000/60);
                     }
                 }
-                catch (CollistionException ex)
+                catch (CollisionException ex)
                 {
-                    drawingProvider.SetText(1, board.Location.Height + 1, $"GAME OVER............... (Collision {ex.Message})");
+                    drawer.SetText(1, board.Location.Height + 1, $"GAME OVER............... (Collision {ex.Message})");
                 }
             });
         }

@@ -2,16 +2,14 @@
 
 namespace SnakeConsole
 {
-
     class Program
     {
         static void Main(string[] args)
         {
-            IDrawingProvider drawingProvider1 = new DrawingProvider();
-
-            Board board = new Board(drawingProvider1, 15, 15);
-            Snake snake = new Snake(drawingProvider1, 2, 2);
-            FruitFactory fruitFactory = new FruitFactory(drawingProvider1, board, snake);
+            IDrawer drawer = new Drawer();
+            Board board = new Board(drawer, 30, 30);
+            Snake snake = new Snake(drawer, 2, 2);
+            FruitFactory fruitFactory = new FruitFactory(drawer, board, snake);
             Fruit fruit = fruitFactory.Create(10, 10);
 
             board.Add(snake);
@@ -32,13 +30,12 @@ namespace SnakeConsole
 
                     commandInvoker.Invoke(command);
                     board.Draw();
-                    System.Threading.Thread.Sleep(100);
+                    System.Threading.Thread.Sleep(50);
                 }
             }
-            catch (CollistionException ex)
+            catch (CollisionException ex)
             {
-                IDrawingProvider drawingProvider = new DrawingProvider();
-                drawingProvider.SetText(1, board.Location.Height + 1, $"GAME OVER............... (Collision {ex.Message})");
+                drawer.SetText(1, board.Location.Height + 1, $"GAME OVER............... (Collision {ex.Message})");
                 Console.ReadKey();
             }
         }

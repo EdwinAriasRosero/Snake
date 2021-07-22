@@ -1,0 +1,9 @@
+E:\DV\Snake\Engine\bin\Debug\netstandard2.1\Engine.deps.json
+E:\DV\Snake\Engine\bin\Debug\netstandard2.1\Engine.dll
+E:\DV\Snake\Engine\bin\Debug\netstandard2.1\Engine.pdb
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.csproj.AssemblyReference.cache
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfoInputs.cache
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.AssemblyInfo.cs
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.csproj.CoreCompileInputs.cache
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.dll
+E:\DV\Snake\Engine\obj\Debug\netstandard2.1\Engine.pdb

@@ -16,6 +16,8 @@ E:\DV\Snake\WinForms\obj\Debug\net5.0-windows\WinForms.pdb
 E:\DV\Snake\WinForms\obj\Debug\net5.0-windows\WinForms.genruntimeconfig.cache
 E:\DV\Snake\WinForms\obj\Debug\net5.0-windows\WinForms.Form1.resources
 E:\DV\Snake\WinForms\obj\Debug\net5.0-windows\WinForms.csproj.GenerateResource.cache
-E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Library.dll
-E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Library.pdb
 E:\DV\Snake\WinForms\obj\Debug\net5.0-windows\WinForms.csproj.CopyComplete
+E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Engine.dll
+E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Engine.pdb
+E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Snake.dll
+E:\DV\Snake\WinForms\bin\Debug\net5.0-windows\Snake.pdb
