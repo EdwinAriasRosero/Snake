@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SnakeConsole
+namespace Engine
 {
     public class CollisionableObserver : ICollisionableObserver
     {

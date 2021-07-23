@@ -1,14 +1,15 @@
 using System;
+using Engine;
 
-namespace SnakeConsole
+namespace Snake
 {
     public class FruitFactory
     {
         private readonly Board _board;
-        private readonly Snake _snake;
+        private readonly SnakeFixture _snake;
         private readonly IDrawer _drawingProvider;
 
-        public FruitFactory(IDrawer drawer, Board board, Snake snake)
+        public FruitFactory(IDrawer drawer, Board board, SnakeFixture snake)
         {
             _board = board;
             _snake = snake;

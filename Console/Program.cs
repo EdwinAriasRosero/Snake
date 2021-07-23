@@ -1,4 +1,6 @@
 ﻿using System;
+using Engine;
+using Snake;
 
 namespace SnakeConsole
 {
@@ -8,7 +10,7 @@ namespace SnakeConsole
         {
             IDrawer drawer = new Drawer();
             Board board = new Board(drawer, 30, 30);
-            Snake snake = new Snake(drawer, 2, 2);
+            SnakeFixture snake = new SnakeFixture(drawer, 2, 2);
             FruitFactory fruitFactory = new FruitFactory(drawer, board, snake);
             Fruit fruit = fruitFactory.Create(10, 10);
 

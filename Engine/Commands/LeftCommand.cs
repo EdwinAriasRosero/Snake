@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace SnakeConsole
+namespace Engine
 {
     public class LeftCommand : ICommand
     {

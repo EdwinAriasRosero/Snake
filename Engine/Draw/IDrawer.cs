@@ -1,4 +1,4 @@
-namespace SnakeConsole
+namespace Engine
 {
     public interface IDrawer
     {

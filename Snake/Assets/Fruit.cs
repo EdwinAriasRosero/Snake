@@ -1,4 +1,6 @@
-namespace SnakeConsole
+using Engine;
+
+namespace Snake
 {
     public class Fruit : DrawingFixture
     {

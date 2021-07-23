@@ -1,8 +1,9 @@
-﻿using SnakeConsole;
+﻿using Snake;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinForms.Infrastructure;
+using Engine;
 
 namespace WinForms
 {
@@ -26,7 +27,7 @@ namespace WinForms
             IDrawer drawer = new Drawer(this);
 
             Board board = new Board(drawer, 50, 50);
-            Snake snake = new Snake(drawer, 20, 20);
+            SnakeFixture snake = new SnakeFixture(drawer, 20, 20);
             FruitFactory fruitFactory = new FruitFactory(drawer, board, snake);
             Fruit fruit = fruitFactory.Create(10, 10);
 

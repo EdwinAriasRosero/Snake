@@ -1,4 +1,4 @@
-namespace SnakeConsole
+namespace Engine
 {
     public class Location
     {

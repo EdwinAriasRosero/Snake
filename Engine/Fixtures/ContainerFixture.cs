@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SnakeConsole
+namespace Engine
 {
     public abstract class ContainerFixture : CollisionableObserver, ICompositeFixture
     {

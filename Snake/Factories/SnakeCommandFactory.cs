@@ -1,10 +1,12 @@
-namespace SnakeConsole
+using Engine;
+
+namespace Snake
 {
     public class SnakeCommandFactory
     {
-        private readonly Snake _snake;
+        private readonly SnakeFixture _snake;
 
-        public SnakeCommandFactory(Snake snake)
+        public SnakeCommandFactory(SnakeFixture snake)
         {
             _snake = snake;
         }

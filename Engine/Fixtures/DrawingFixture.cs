@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SnakeConsole
+namespace Engine
 {
     public abstract class DrawingFixture : ContainerFixture, ILocalizable, ICollisionable
     {

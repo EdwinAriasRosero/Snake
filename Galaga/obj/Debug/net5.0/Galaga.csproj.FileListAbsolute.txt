@@ -1,0 +1,15 @@
+E:\DV\Snake\Galaga\bin\Debug\net5.0\Galaga.deps.json
+E:\DV\Snake\Galaga\bin\Debug\net5.0\Galaga.dll
+E:\DV\Snake\Galaga\bin\Debug\net5.0\ref\Galaga.dll
+E:\DV\Snake\Galaga\bin\Debug\net5.0\Galaga.pdb
+E:\DV\Snake\Galaga\bin\Debug\net5.0\Engine.dll
+E:\DV\Snake\Galaga\bin\Debug\net5.0\Engine.pdb
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.csproj.AssemblyReference.cache
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.GeneratedMSBuildEditorConfig.editorconfig
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.AssemblyInfoInputs.cache
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.AssemblyInfo.cs
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.csproj.CoreCompileInputs.cache
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.csproj.CopyComplete
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.dll
+E:\DV\Snake\Galaga\obj\Debug\net5.0\ref\Galaga.dll
+E:\DV\Snake\Galaga\obj\Debug\net5.0\Galaga.pdb

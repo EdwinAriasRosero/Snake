@@ -1,12 +1,14 @@
-namespace SnakeConsole
+using Engine;
+
+namespace Snake
 {
     public class ScoreObserver : ICollisionableObserver
     {
-        private readonly Snake _snake;
+        private readonly SnakeFixture _snake;
         private readonly Board _board;
         private readonly IDrawer _drawingProvider;
 
-        public ScoreObserver(IDrawer drawer, Snake snake, Board board)
+        public ScoreObserver(IDrawer drawer, SnakeFixture snake, Board board)
         {
             _snake = snake;
             _board = board;

@@ -1,13 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
+using Engine;
 
-namespace SnakeConsole
+namespace Snake
 {
-    public class Snake : DrawingFixture
+    public class SnakeFixture : DrawingFixture
     {
         private Location _previousPosition;
 
-        public Snake(IDrawer drawer, int x, int y) : base(drawer, new Location(x, y))
+        public SnakeFixture(IDrawer drawer, int x, int y) : base(drawer, new Location(x, y))
         {
         }
 
