@@ -9,7 +9,7 @@ namespace SnakeConsole
 
         public Location Location => LocationList.First();
 
-        protected readonly IDrawer _drawing;
+        protected readonly IDrawer _drawer;
 
         public DrawingFixture RootObject
         {
@@ -31,7 +31,7 @@ namespace SnakeConsole
             LocationList = new LinkedList<Location>();
             LocationList.AddFirst(location);
 
-            _drawing = drawer;
+            _drawer = drawer;
         }
 
         public List<DrawingFixture> Find(int x, int y)
@@ -50,7 +50,7 @@ namespace SnakeConsole
 
         public void Paint(int left, int top, string symbol)
         {
-            _drawing.Draw(Parent, left, top, symbol);
+            _drawer.Draw(Parent, left, top, symbol);
         }
 
         public void Draw()

@@ -11,7 +11,7 @@ namespace SnakeConsole
             _snake = snake;
         }
 
-        public void Notify(DrawingFixture asset)
+        public void Notify(ICollisionable asset)
         {
             _snake.Grow();
         }

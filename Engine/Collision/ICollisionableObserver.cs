@@ -2,6 +2,6 @@ namespace SnakeConsole
 {
     public interface ICollisionableObserver
     {
-        void Notify(DrawingFixture asset);
+        void Notify(ICollisionable asset);
     }
 }

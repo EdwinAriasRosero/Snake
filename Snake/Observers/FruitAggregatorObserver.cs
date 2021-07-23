@@ -11,7 +11,7 @@ namespace SnakeConsole
             _fruitFactory = fruitFactory;
         }
 
-        public void Notify(DrawingFixture asset)
+        public void Notify(ICollisionable asset)
         {
             Fruit fruit = _fruitFactory.Create();
             _board.Add(fruit);

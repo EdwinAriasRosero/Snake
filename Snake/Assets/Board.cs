@@ -4,7 +4,7 @@ namespace SnakeConsole
     {
         public Board(IDrawer drawer, int width, int height) : base(drawer, new Location(1, 1, width, height))
         {
-            _drawing.SetBoardDimension(width, height);
+            _drawer.SetBoardDimension(width, height);
 
             LocationList.Clear();
 

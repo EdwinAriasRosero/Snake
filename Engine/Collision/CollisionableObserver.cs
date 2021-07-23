@@ -16,7 +16,7 @@ namespace SnakeConsole
             _subscribers.Add(listener);
         }
 
-        public void Notify(DrawingFixture asset)
+        public void Notify(ICollisionable asset)
         {
             foreach (ICollisionableObserver listener in _subscribers)
             {

@@ -13,7 +13,7 @@ namespace SnakeConsole
             _drawingProvider = drawer;
         }
 
-        public void Notify(DrawingFixture asset)
+        public void Notify(ICollisionable asset)
         {
             _drawingProvider.SetText(1, _board.Location.Height + 1, $"Score: {_snake.LocationList.Count}");
         }

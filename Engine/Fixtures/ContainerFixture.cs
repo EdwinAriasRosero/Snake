@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace SnakeConsole
 {
-    public abstract class ContainerFixture : CollisionableObserver
+    public abstract class ContainerFixture : CollisionableObserver, ICompositeFixture
     {
         public DrawingFixture Parent { get; set; }
 
